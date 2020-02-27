@@ -2,8 +2,8 @@ class Transfer
   # code here
   attr_accessor :sender, :receiver, :amount, :status, :count
 
- 
-  def both_valid?
+  
+  def valid?
     if sender.valid? && receiver.valid?
       true
     else
